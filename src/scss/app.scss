@@ -88,8 +88,6 @@ body {
     }
   }
 
-  &__nav {}
-
   &__list {
     display: flex;
     transition: all 0.3s ease-out;
@@ -245,7 +243,7 @@ body {
     }
 
     @media (max-width: 575px) {
-      font-size: 19px;
+      font-size: 18px;
       margin-top: 160px;
       line-height: 40px;
     }
@@ -316,9 +314,6 @@ body {
 .order {
   background: url('/src/images/design/order_back.jpg') 0 0/cover no-repeat;
 
-
-  &__body {}
-
   &__title {
     margin-top: 123px;
     text-align: center;
@@ -341,7 +336,7 @@ body {
     }
 
     @media (max-width: 575px) {
-      font-size: 25px;
+      font-size: 24px;
     }
   }
 
@@ -729,8 +724,6 @@ body {
       }
     }
   }
-
-  &__copyright {}
 
   &__payments {
     display: flex;
