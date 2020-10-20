@@ -9,6 +9,8 @@
 </head>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <body>
 
@@ -19,13 +21,14 @@
         <div class="header__body">
           <div class="header__logo"><img src="images/content/logo.png" alt=""></div>
           <nav class="header__nav">
-            <ul class="header__list">
+            <ul class="header__list" id="nav">
               <li><a href="" class="header__link">бизнес</a></li>
               <li><a href="" class="header__link">о нас</a></li>
               <li><a href="" class="header__link">цены</a></li>
               <li><a href="" class="header__link">оформить заказ</a></li>
             </ul>
           </nav>
+          <div class="header__burger" id="burger"><span></span></div>
         </div><!-- header__body -->
       </div><!-- container -->
     </div><!-- header -->
@@ -41,7 +44,7 @@
             <li class="intro__clause">- Sed ut perspiciatis, unde omnis iste natus error</li>
           </ul>
           <div class="intro__buttons">
-            <a href="" class="button button_intro">Заказать</a>
+            <a href="" class="button button_order">Заказать</a>
             <a href="" class="button button_intro">Подробнее</a>
           </div>
         </div><!-- body -->
@@ -115,23 +118,23 @@
             <div class="order__menu-item">
               <div class="order__menu-collapse">
                 <div class="order__menu-button order__menu-button_list">Выберите тип системы<i class="fas fa-angle-down"></i></div>
-                  <ul class="order__menu-list hidden">
-                    <li class="order__menu-clause">Sed ut perspiciatis</li>
-                    <li class="order__menu-clause">Nemo enim ipsam</li>
-                    <li class="order__menu-clause">Et harum quidem</li>
-                    <li class="order__menu-clause">Temporibus autem</li>
-                    <li class="order__menu-clause">Itaque earum rerum</li>
-                    <li class="order__menu-clause">Sed ut perspiciatis</li>
-                    <li class="order__menu-clause">Nemo enim ipsam</li>
-                    <li class="order__menu-clause">Et harum quidem</li>
-                    <li class="order__menu-clause">Temporibus autem</li>
-                    <li class="order__menu-clause">Itaque earum rerum</li>
-                    <li class="order__menu-clause">Sed ut perspiciatis</li>
-                    <li class="order__menu-clause">Nemo enim ipsam</li>
-                    <li class="order__menu-clause">Et harum quidem</li>
-                    <li class="order__menu-clause">Temporibus autem</li>
-                    <li class="order__menu-clause">Itaque earum rerum</li>
-                  </ul>
+                <ul class="order__menu-list hidden">
+                  <li class="order__menu-clause">Sed ut perspiciatis</li>
+                  <li class="order__menu-clause">Nemo enim ipsam</li>
+                  <li class="order__menu-clause">Et harum quidem</li>
+                  <li class="order__menu-clause">Temporibus autem</li>
+                  <li class="order__menu-clause">Itaque earum rerum</li>
+                  <li class="order__menu-clause">Sed ut perspiciatis</li>
+                  <li class="order__menu-clause">Nemo enim ipsam</li>
+                  <li class="order__menu-clause">Et harum quidem</li>
+                  <li class="order__menu-clause">Temporibus autem</li>
+                  <li class="order__menu-clause">Itaque earum rerum</li>
+                  <li class="order__menu-clause">Sed ut perspiciatis</li>
+                  <li class="order__menu-clause">Nemo enim ipsam</li>
+                  <li class="order__menu-clause">Et harum quidem</li>
+                  <li class="order__menu-clause">Temporibus autem</li>
+                  <li class="order__menu-clause">Itaque earum rerum</li>
+                </ul>
               </div>
             </div>
 
