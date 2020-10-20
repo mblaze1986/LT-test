@@ -24,18 +24,19 @@ $(document).ready(function () {
       console.log('click');
       const $targetElem = $(this).parent().find(targetMenuSelector);
       $(this).parent().find(targetMenuSelector).toggleClass('hidden').toggleClass('open');
-      $(this).parent().find(btnSelector).toggleClass('open');
+      $(this).parent().find(btnSelector).addClass('open');
       $(document).mouseup(function (e) {
         let container = $targetElem;
         if (container.has(e.target).length === 0) {
           container.addClass('hidden');
+          $(btnSelector).removeClass('open');
         }
       });
     });
   });
   $('.order__menu-clause').each(function () {
     $(this).click(function (event) {
-      $(event.currentTarget).parents('.order__menu-collapse').find(btnSelector).html($(event.currentTarget).html() + '.fas fa-angle-down');
+      $(event.currentTarget).parents('.order__menu-collapse').find(btnSelector).html($(event.currentTarget).html() + '<i class="fas fa-angle-down"></i>');
       $(event.currentTarget).parents('.order__menu-collapse').find(targetMenuSelector).addClass('hidden');
       $(event.currentTarget).parents('.order__menu-collapse').find(btnSelector).removeClass('open');
     });
